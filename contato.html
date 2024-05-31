@@ -5,10 +5,35 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact</title>
+        <title>Contato - Projeto Agrinho</title>
         <link rel="stylesheet" href="style.css">
     </head>
-
+    <style>
+        body{
+        min-height:200vh;
+        }
+    
+        ::-webkit-scrollbar 
+        {
+            width: 10px;
+        }
+    
+        ::-webkit-scrollbar-track 
+        {
+            background: rgb(165, 225, 243);
+        }
+    
+        ::-webkit-scrollbar-thumb 
+        {
+            background: #000000;
+            border-radius: 12px;
+        }
+    
+        ::-webkit-scrollbar-thumb:hover 
+        {
+            opacity: .95;
+        }
+    </style>
     <body>
         <div class="container">
             <nav>
@@ -25,7 +50,6 @@
                 </ul>
             </nav>
             <header class="center">
-                <img src="trigo plantio.jpg"></img>
                 <h1>Entre em contato!</h1>
             </header>
             <form class="contact-form" action="https://docs.google.com/forms/u/0/?pli=1&tgif=d" method="POST">
@@ -37,25 +61,28 @@
                     <label for="message">Mensagem</label>
                     <input type="text" id="message" name="message" required>
                 </div>
-                <button type="submit">Entre</button>
-                <div>
-                </div>
+                <button type="submit">Enviar</button>
+                <header class="center">
+                    <img src="trigo plantio.jpg"></img>
+                </header>
                 <input type="hidden" name="_next" value="https://github.com/professor-rafael">
                 <input type="hidden" name="_subject" value="New submission!">
-                <footer>
-                    <a href="https://github.com/jotinhaxit" target="_blank" rel="noopener noreferrer">
-                        <img src="github.png"></img>
-                        <p>Github</p>
+            </div>
+            <footer>
+                <a href="https://github.com/jotinhaxit" target="_blank" rel="noopener noreferrer">
+                    <img src="github.png"></img>
+                    <p>Github</p>
+                </a>
+                <a href="https://www.youtube.com/channel/UCocsWjFMIb9_OMkOQAcGI0w" target="_blank" rel="noopener noreferrer">
+                    <img src="youtube.png"></img>
+                    <p>Youtube</p>
+                    <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="chatgpt.png"></img>
+                        <p>Chat GPT</p>
                     </a>
-                    <a href="https://www.youtube.com/channel/UCocsWjFMIb9_OMkOQAcGI0w" target="_blank" rel="noopener noreferrer">
-                        <img src="youtube.png"></img>
-                        <p>Youtube</p>
-                        <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="chatgpt.png"></img>
-                            <p>Chat GPT</p>
-                        </a>
-                    </a>
-                </footer>
-        </div>
-    </body>
+                </a>
+            </footer>
+            <h2>Jotinha.xit</h2>
+            <span class="loader-2"></span>
+        </body>
 </html>

@@ -24,7 +24,7 @@ header img {
     width: 90%;
     height: none;
     border-radius: 1%;
-    border: 5px ridge #000000;
+    border: 5px ridge #14a5b8;
 }
 
 .center {
@@ -46,12 +46,12 @@ footer {
 }
 
 footer a {
-    margin: 20px;
+    margin: 60px;
     text-align: center;
 }
 
 footer p {
-    margin-top: 2px;
+    margin-top: auto;
 }
 
 .container {
@@ -63,30 +63,51 @@ nav a {
 }
 
 nav a:hover {
-    color: #8d8f8d;
+    color: #fffdfd;
 }
 
 .contact-form input{
-    width: 100%;
-    padding: 9px 0;
-    margin: 9px 0;
-    border: #000000 solid;
-    border-radius: 10px;
+    width: 98%;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #000000;
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 30px;
 }
 
 .contact-form input[type=text] {
-    height: 100px;
-    border: #000000 solid;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #000000;
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 30px
 }
 
 button {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    border: black solid;
-    width: 100px;
-    height: 30px;
-    border-radius: 10px 10px;
+    margin: 60px;
+    position: relative;
+    display: inline-block;
+    padding: 12px 20px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-top: 20px;
+    overflow: hidden;
     cursor: pointer;
+    background: #bfc8c9;
+}
+button:hover{
+    color: #000000;
+    background-color: #504f4f;
 }
 
 .relogio{
@@ -125,3 +146,71 @@ button {
 	font-size: 20px;
 	margin: 0;
 }
+.loader-2 {
+   width: 48px;
+   height: 48px;
+   position: relative;
+    animation : rotate 4s linear infinite;
+  }
+.loader-2:before,
+.loader-2:after {
+   content:"";
+   display: block;
+   border: 24px solid;
+   border-color: transparent transparent #fff  #fff;
+   position: absolute;
+   left: 0;
+   top: 0;
+    animation: mvx 1s infinite ease-in;
+}
+.loader-2:before {
+    left: -1px;
+    top: 1px;
+    border-color:#000405  #000000 transparent transparent;
+    animation-name:mvrx;
+}
+
+@keyframes rotate {
+    100% {transform: rotate(360deg)}
+}
+@keyframes mvx {
+    0% , 15% {transform: translate(0 , 0) rotate(0deg)}
+    50% {transform: translate(-50% , 50%) rotate(180deg)}
+    100% {transform: translate(0% , 0%) rotate(180deg)}
+}
+@keyframes mvrx {
+    0% , 15%  {transform: translate(0 , 0) rotate(0deg)}
+    50% {transform: translate(50% , -50%) rotate(180deg)}
+    100% {transform: translate(0% , 0%) rotate(180deg)}
+}
+.loader-3{
+    width: 48px;
+    height: 48px;
+    border-width: 3px;
+    border-style: dashed solid  solid dotted;
+    border-color: #000000 #000000 transparent #000000;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 20px;
+    top: 31px;
+    border: 10px solid transparent;
+    border-right-color: #FF3D00;
+    transform: rotate(-40deg);
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }  
